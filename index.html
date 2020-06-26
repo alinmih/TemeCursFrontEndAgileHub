@@ -70,7 +70,8 @@
             </tr>
         </tbody>
     </table>
-    <p></p>
+
+    <br>
 
         <form action="index.html" method="POST">
             <fieldset>
@@ -82,33 +83,76 @@
 
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" required></input>
+                    <input type="email" id="email" required></input>          
                 </p>
 
                 <p>Favourite planet:</p>
-                <label><input type="radio" name="favplanet" name="Venus">Venus</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Mercury">Mercury</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Earth" checked>Earth</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Mars">Mars</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Jupiter">Jupiter</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Saturn">Saturn</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Uranus">Uranus</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Neptune">Neptune</label>
-                <br>
-                <label><input type="radio" name="favplanet" name="Pluto">Pluto</label>
+                <ul type="none">
+                    <li>
+                        <label for="Venus">
+                            <input type="radio" name="favplanet" id="Venus">
+                            Venus
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Mercury">
+                            <input type="radio" name="favplanet" id="Mercury">
+                            Mercury
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Earth">
+                            <input type="radio" name="favplanet" id="Earth" checked>
+                            Earth
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Mars">
+                            <input type="radio" name="favplanet" id="Mars">
+                            Mars
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Jupiter">
+                            <input type="radio" name="favplanet" id="Jupiter">
+                            Jupiter
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Saturn">
+                            <input type="radio" name="favplanet" id="Saturn">
+                            Saturn
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Uranus">
+                            <input type="radio" name="favplanet" id="Uranus">
+                            Uranus
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Neptune">
+                            <input type="radio" name="favplanet" id="Neptune">
+                            Neptune
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Pluto">
+                            <input type="radio" name="favplanet" id="Pluto">
+                            Pluto
+                        </label>
+                    </li>
+                </ul>
 
-                <p><label><input type="checkbox" required>I agree to the <a href="#">terms and contitions</a></label></p>
+                <p>
+                    <input type="checkbox" name="termsrequired" required>
+                    <label for="termsrequired">
+                        <span>I agree to the <a href="#">terms and contitions</a></span>
+                    </label>
+                </p>
                 <button type="reset">Reset</button>
                 <button type="submit">Ask away</button>
-                <br>
-                <br>
+
             </fieldset>
         </form>
 
