@@ -78,76 +78,76 @@
                 <legend>Ask us about planets</legend>
                 <p>
                     <label for="fname">Full name:</label>
-                    <input type="text" id="fname" required>
+                    <input type="text" id="fname" name="fname" required>
                 </p>
 
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" required></input>          
+                    <input type="email" id="email" name="email" required></input>          
                 </p>
 
                 <p>Favourite planet:</p>
                 <ul type="none">
                     <li>
                         <label for="Venus">
-                            <input type="radio" name="favplanet" id="Venus">
+                            <input type="radio" name="favplanet" id="Venus" value="Venus">
                             Venus
                         </label>
                     </li>
                     <li>
                         <label for="Mercury">
-                            <input type="radio" name="favplanet" id="Mercury">
+                            <input type="radio" name="favplanet" id="Mercury" value="Mercury">
                             Mercury
                         </label>
                     </li>
                     <li>
                         <label for="Earth">
-                            <input type="radio" name="favplanet" id="Earth" checked>
+                            <input type="radio" name="favplanet" id="Earth" value="Earth" checked>
                             Earth
                         </label>
                     </li>
                     <li>
                         <label for="Mars">
-                            <input type="radio" name="favplanet" id="Mars">
+                            <input type="radio" name="favplanet" id="Mars" value="Mars">
                             Mars
                         </label>
                     </li>
                     <li>
                         <label for="Jupiter">
-                            <input type="radio" name="favplanet" id="Jupiter">
+                            <input type="radio" name="favplanet" id="Jupiter" value="Jupiter">
                             Jupiter
                         </label>
                     </li>
                     <li>
                         <label for="Saturn">
-                            <input type="radio" name="favplanet" id="Saturn">
+                            <input type="radio" name="favplanet" id="Saturn" value="Saturn">
                             Saturn
                         </label>
                     </li>
                     <li>
                         <label for="Uranus">
-                            <input type="radio" name="favplanet" id="Uranus">
+                            <input type="radio" name="favplanet" id="Uranus" value="Uranus">
                             Uranus
                         </label>
                     </li>
                     <li>
                         <label for="Neptune">
-                            <input type="radio" name="favplanet" id="Neptune">
+                            <input type="radio" name="favplanet" id="Neptune" value="Neptune">
                             Neptune
                         </label>
                     </li>
                     <li>
                         <label for="Pluto">
-                            <input type="radio" name="favplanet" id="Pluto">
+                            <input type="radio" name="favplanet" id="Pluto" value="Pluto">
                             Pluto
                         </label>
                     </li>
                 </ul>
 
                 <p>
-                    <input type="checkbox" name="termsrequired" required>
+                    <input type="checkbox" name="termsrequired" id="termsrequired" required>
                     <label for="termsrequired">
-                        <span>I agree to the <a href="#">terms and contitions</a></span>
+                        I agree to the <a href="#">terms and contitions</a>
                     </label>
                 </p>
                 <button type="reset">Reset</button>
