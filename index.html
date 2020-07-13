@@ -3,158 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 1</title>
+    <link rel="stylesheet" href="site.css">
+    <title>Tema 2-Modal window</title>
 </head>
 <body>
-    <h1>Planets</h1>
+<div class="main">
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nesciunt id dolorem. Praesentium voluptas, ut impedit recusandae cupiditate, facere ipsa fugit qui dignissimos nisi nemo deleniti placeat fuga perferendis vel.</p>
+        <p>Autem ab nobis consectetur labore, voluptatem officia! Odit, minus. Voluptates cupiditate asperiores dolorum ipsum molestias quod incidunt mollitia! Quisquam, quidem animi. Blanditiis voluptatum veritatis temporibus unde, dolorum amet rerum sed!</p>
+        <p>Veritatis necessitatibus recusandae odio esse illo sapiente adipisci optio nesciunt consectetur assumenda, consequuntur provident eaque sint repudiandae accusamus est impedit ipsa in a maxime tempore asperiores corrupti exercitationem iure? Facere!</p>
+        <p>Repellat nam sequi consequatur hic quo vitae nihil nesciunt ratione at obcaecati laboriosam ducimus odit asperiores neque aliquid doloribus officia vero, praesentium aliquam fugit repellendus. Repellendus vitae obcaecati doloremque incidunt?</p>
+        <p>Ab illum dolorum eum? Iste adipisci eaque qui in facere consectetur ipsa quas, sunt nulla perspiciatis, doloribus incidunt ipsum deleniti fuga nesciunt natus laudantium esse non officiis voluptate! Fuga, eaque!</p>
+    </div>
 
-    <table border="1" cellspacing="2" cellpadding="2">
-        <thead>
-            <tr>
-                <th colspan="2"></th>
-                <th scope="col">Name</th>
-                <th scope="col">Mass (10<sup>24</sup>kg)</th>
-                <th scope="col">Diameter(km)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th colspan="2" scope="rowgroup" rowspan="4" >Terrestrial planets</th>
-                <th scope="">Mercury</th>
-                <td>0.33</td>
-                <td>4,879</td>
-            </tr>
-            <tr>
-                <th scope="row">Venus</th>
-                <td>4087</td>
-                <td>12,104</td>
-            </tr>
-            <tr>
-                <th scope="row">Earth</th>
-                <td>5.97</td>
-                <td>12,756</td>
-            </tr>
-            <tr>
-                <th scope="row">Mars</th>
-                <td>0.642</td>
-                <td>6,792</td>
-            </tr>
-            <tr>
-                <th rowspan="4" scope="rowgroup">Jovial planets</th>
-                <th rowspan="2" scope="rowgroup">Gas giants</th>
-                <th scope="row">Jupiter</th>
-                <td>1898</td>
-                <td>142,984</td>
-            </tr>
-            <tr>
-                <th scope="row">Saturn</th>
-                <td>568</td>
-                <td>120,536</td>
-            </tr>
-            <tr>
-                <th rowspan="2" scope="rowgroup">Ice giants</th>
-                <th scope="row">Uranus</th>
-                <td>86.8</td>
-                <td>51,118</td>
-            </tr>
-            <tr>
-                <th scope="row">Neptune</th>
-                <td>102</td>
-                <td>49,528</td>
-            </tr>
-            <tr>
-                <th colspan="2" scope="row">Dwarf planets</th>
-                <th scope="row">Pluto</th>
-                <td>0.0146</td>
-                <td>2,370</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-
-        <form action="index.html" method="POST">
-            <fieldset>
-                <legend>Ask us about planets</legend>
-                <p>
-                    <label for="fname">Full name:</label>
-                    <input type="text" id="fname" name="fname" required>
-                </p>
-
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required></input>          
-                </p>
-
-                <p>Favourite planet:</p>
-                <ul type="none">
-                    <li>
-                        <label for="Venus">
-                            <input type="radio" name="favplanet" id="Venus" value="Venus">
-                            Venus
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Mercury">
-                            <input type="radio" name="favplanet" id="Mercury" value="Mercury">
-                            Mercury
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Earth">
-                            <input type="radio" name="favplanet" id="Earth" value="Earth" checked>
-                            Earth
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Mars">
-                            <input type="radio" name="favplanet" id="Mars" value="Mars">
-                            Mars
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Jupiter">
-                            <input type="radio" name="favplanet" id="Jupiter" value="Jupiter">
-                            Jupiter
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Saturn">
-                            <input type="radio" name="favplanet" id="Saturn" value="Saturn">
-                            Saturn
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Uranus">
-                            <input type="radio" name="favplanet" id="Uranus" value="Uranus">
-                            Uranus
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Neptune">
-                            <input type="radio" name="favplanet" id="Neptune" value="Neptune">
-                            Neptune
-                        </label>
-                    </li>
-                    <li>
-                        <label for="Pluto">
-                            <input type="radio" name="favplanet" id="Pluto" value="Pluto">
-                            Pluto
-                        </label>
-                    </li>
-                </ul>
-
-                <p>
-                    <input type="checkbox" name="termsrequired" id="termsrequired" required>
-                    <label for="termsrequired">
-                        I agree to the <a href="#">terms and contitions</a>
-                    </label>
-                </p>
-                <button type="reset">Reset</button>
-                <button type="submit">Ask away</button>
-
-            </fieldset>
-        </form>
+    <div class="modal-container">
+        <div class="modal-content">
+            <header class="form-header">
+                <h2>Login</h2>
+                <button type="button" class="close-button">&times</button>
+            </header>
+                <div class="form-main">    
+                    <form action="#" method="GET">
+                    <p class="username">  
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </p>
+                    <p class="password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password">   
+                    </p>
+                </div>
+                <footer class="form-footer">
+                    <button type="reset" class="cancel-button">Cancel</button>
+                    <button type="submit" class="login-button">Login</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 </body>
