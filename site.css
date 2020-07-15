@@ -1,14 +1,8 @@
 *{
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
-
-.main{
-    position: absolute;
-}
-
-
 
 .modal-container{
     position: fixed;
@@ -17,7 +11,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 5000;
 }
 
 .modal-content{
@@ -28,13 +22,12 @@
     bottom: 50%;
     left: 50%;
     transform: translate(-50%,30%);
-
     border-radius: 5px;
     border:1px solid #cdcdcd;
-    
 }
 
 .form-header{
+    position: relative;
     border-bottom: 1px solid #cdcdcd;
     height: 50px; 
 }
@@ -48,10 +41,13 @@ button.close-button{
     position: absolute;
     top: 5px;
     right: 5px;
-
     background-color: #333;
     color: #fff;
     border-radius: 50%;
+}
+
+button.close-button:focus{
+    outline:0;
 }
 
 .form-main {
@@ -61,12 +57,12 @@ button.close-button{
 .username, .password{
     margin-top: 10px;
     text-align: right;
-
     transform: translate(-30%,40%);
 }
 
 .form-footer{
     position: relative;
+    display: inline-block;
     height: 50px;
     bottom: 0;
     left: 0;
@@ -89,62 +85,15 @@ button.close-button{
 }
 
 .cancel-button{
-    border-radius: 3px;
-    position: absolute;
+    border-radius: 3px;  
     right: 55px;
 
 }
-
 
 [placeholder]{
     color: #929292;
 }
 
-/* 
-.main  {
-    position: relative;
+::placeholder{
+    color: #929292;
 }
-
-.elem{
-
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    float: left;
-}
-
-.elem:first-child{
-    position: relative;
-    z-index: 0;
-}
-
-.relative {
-    background-color: red;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-
-.absolute {
-    background-color: pink;
-    position: absolute;
-    top: 0px;
-    left:0px;
-} */
-
-/* div:nth-child(2){
-    background-color: red;
-    position: relative;
-
-}
-
-div:nth-child(3){
-    position: fixed;
-left: 0;
-bottom:50px;
-
-    transform: translateY(-50%);
-
-    background-color: rgba(0, 0, 0, 0.7);
-} */
-
