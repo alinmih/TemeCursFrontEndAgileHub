@@ -9,87 +9,93 @@
 </head>
 <body>
     <header class="header">
-        <div class="info">
-            <p class="item"><span class="glyphicon glyphicon-time"></span>Free and Fast Delivery</p>
-            <p class="item"><span class="glyphicon glyphicon-shopping-cart"></span>Free shipping On all Orders</p>
-            <p class="item"><span class="glyphicon glyphicon-envelope"></span>info@example.com</p>
-        </div>
-        <img src="./assets/images/logo3.jpg" alt="" class="logo">
-
-        <div class="topnav">
-            <input type="text" placeholder="Search" class="topnav-item searchText">
-            <select name="seachCat" id="seachCat" class="topnav-item seachCat">
-                <option value="allCategories">All categories</option>
-                <option value="mens">Men's wear</option>
-                <option value="womens">Women's wear</option>
-                <option value="electronics">Electronics</option>
-                <option value="codes">Short codes</option>
-            </select>
-            <a href="#" class="searchBtn"><img src="./assets/images/search.png" alt="" class="topnav-item searchBtn-img"></a>
-        </div>
-
-        <img src="./assets/images/img-sp.png" alt="" class="img-sp">
-    
-
-    <nav role="navigation" class="navbar">
-        <div class="navbar-items">
-            <div id="menuToggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="main-menu-items">
-                    <li class="main-menu-item"><a href="#">Home</a></li>
-                    <li class="main-menu-item"><a href="#">Men's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
-                        <ul class="sub-main-menu">
-                            <li class="sub-main-menu-item-content"><a href="#">Clothing</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Wallets</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Footwear</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Watches</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Accessories</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Bags</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Caps & Hats</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Jewellery</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Parfumes</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Beauty</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Shirts</a></li>
-                            <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
-                        </ul>
-                    </li>
-                    <li class="main-menu-item"><a href="#">Women's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
-                        <ul class="sub-main-menu">
-                            <li class="main-menu-item-content"><a href="#">Clothing</a></li>
-                            <li class="main-menu-item-content"><a href="#">Wallets</a></li>
-                            <li class="main-menu-item-content"><a href="#">Footwear</a></li>
-                            <li class="main-menu-item-content"><a href="#">Watches</a></li>
-                            <li class="main-menu-item-content"><a href="#">Accessories</a></li>
-                            <li class="main-menu-item-content"><a href="#">Bags</a></li>
-                            <li class="main-menu-item-content"><a href="#">Caps & Hats</a></li>
-                            <li class="main-menu-item-content"><a href="#">Jewellery</a></li>
-                            <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
-                            <li class="main-menu-item-content"><a href="#">Parfumes</a></li>
-                            <li class="main-menu-item-content"><a href="#">Beauty</a></li>
-                            <li class="main-menu-item-content"><a href="#">Shirts</a></li>
-                            <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
-                        </ul>
-                    </li>
-                    <li class="main-menu-item"><a href="#">Electronics</a></li>
-                    <li class="main-menu-item"><a href="#">Short codes</a></li>
-                    <li class="main-menu-item"><a href="#">Contact</a></li>
-                </ul>
+        
+            <div class="info">
+                <p class="item"><span class="glyphicon glyphicon-time"></span>Free and Fast Delivery</p>
+                <p class="item"><span class="glyphicon glyphicon-shopping-cart"></span>Free shipping On all Orders</p>
+                <p class="item"><span class="glyphicon glyphicon-envelope"></span>info@example.com</p>
             </div>
-            <div class="shopping-cart">
-                <p class="cart-info"><span class="glyphicon glyphicon-shopping-cart"></span>$0.00 (0 items)</p>
-                <p class="cart-info">Empty Cart</p>
+            <div class="search-menu">
+                <img src="./assets/images/logo3.jpg" alt="" class="logo search-menu-item">
+                <form action="get" class="search-menu-item-2">
+                    <div class="topnav">
+                        
+                            <input type="text" placeholder="Search" class="topnav-item searchText">
+                            <select name="seachCat" id="seachCat" class="topnav-item seachCat">
+                                <option value="allCategories">All categories</option>
+                                <option value="mens">Men's wear</option>
+                                <option value="womens">Women's wear</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="codes">Short codes</option>
+                            </select>
+                            <a href="#" class="searchBtn"><img src="./assets/images/search.png" alt="" class="topnav-item searchBtn-img"></a>
+                        
+                    </div>
+                </form>
+                <img src="./assets/images/img-sp.png" alt="" class="img-sp search-menu-item">
             </div>
+
+        <nav role="navigation" class="navbar">
+
             
-        </div>
-        <div class="navbar-logo">
-            <img src="./assets/images/ba3.jpg" alt="">
-        </div>
-    </nav>
-</header>   
+            <!-- <div class="navbar-items">
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="main-menu-items">
+                        <li class="main-menu-item"><a href="#">Home</a></li>
+                        <li class="main-menu-item"><a href="#">Men's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="sub-main-menu">
+                                <li class="sub-main-menu-item-content"><a href="#">Clothing</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Wallets</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Footwear</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Watches</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Accessories</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Bags</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Caps & Hats</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Jewellery</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Parfumes</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Beauty</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Shirts</a></li>
+                                <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item"><a href="#">Women's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="sub-main-menu">
+                                <li class="main-menu-item-content"><a href="#">Clothing</a></li>
+                                <li class="main-menu-item-content"><a href="#">Wallets</a></li>
+                                <li class="main-menu-item-content"><a href="#">Footwear</a></li>
+                                <li class="main-menu-item-content"><a href="#">Watches</a></li>
+                                <li class="main-menu-item-content"><a href="#">Accessories</a></li>
+                                <li class="main-menu-item-content"><a href="#">Bags</a></li>
+                                <li class="main-menu-item-content"><a href="#">Caps & Hats</a></li>
+                                <li class="main-menu-item-content"><a href="#">Jewellery</a></li>
+                                <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
+                                <li class="main-menu-item-content"><a href="#">Parfumes</a></li>
+                                <li class="main-menu-item-content"><a href="#">Beauty</a></li>
+                                <li class="main-menu-item-content"><a href="#">Shirts</a></li>
+                                <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item"><a href="#">Electronics</a></li>
+                        <li class="main-menu-item"><a href="#">Short codes</a></li>
+                        <li class="main-menu-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="shopping-cart">
+                    <p class="cart-info"><span class="glyphicon glyphicon-shopping-cart"></span>$0.00 (0 items)</p>
+                    <p class="cart-info">Empty Cart</p>
+                </div>
+                
+            </div> -->
+            <div class="navbar-logo">
+                <img src="./assets/images/ba3.jpg" alt="">
+            </div>
+        </nav>
+    </header>   
 
 <main>
     <section class="news">
@@ -270,5 +276,17 @@
     </footer>
 
 </main>
+
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
 </body>
 </html>
