@@ -496,6 +496,13 @@ button{
     margin: 1rem 0;
 }
 
+.signup-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 /* .main-menu{
     position: relative;
     
