@@ -4,26 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Tema 2-Modal window</title>
+    <link rel="stylesheet" href="./assets/fonts/glyphicons.css">
+    <title>Tema 4-EShop</title>
 </head>
 <body>
-        <nav class="navbar">
-            <ul class="navbar-nav">
-                <li class="logo"><a href="#" class="nav-link"><i class="fas fa-angle-double-right icon"></i><span class="link-text logo-text">Awesome Nav</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cat"></i><span class="link-text">Cats</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-reddit-alien"></i><span class="link-text">Aliens</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-satellite"></i><span class="link-text">Space</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-space-shuttle"></i><span class="link-text">Shuttle</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-moon"></i><span class="link-text">Themify</span></a></li>
+    <header class="header">
+        <div class="info">
+            <p class="item"><span class="glyphicon glyphicon-time"></span>Free and Fast Delivery</p>
+            <p class="item"><span class="glyphicon glyphicon-shopping-cart"></span>Free shipping On all Orders</p>
+            <p class="item"><span class="glyphicon glyphicon-envelope"></span>info@example.com</p>
+        </div>
+        <img src="./assets/images/logo3.jpg" alt="" class="logo">
+
+        <div class="topnav">
+            <input type="text" placeholder="Search" class="topnav-item searchText">
+            <select name="seachCat" id="seachCat" class="topnav-item seachCat">
+                <option value="allCategories">All categories</option>
+                <option value="mens">Men's wear</option>
+                <option value="womens">Women's wear</option>
+                <option value="electronics">Electronics</option>
+                <option value="codes">Short codes</option>
+            </select>
+            <a href="#" class="searchBtn"><img src="./assets/images/search.png" alt="" class="topnav-item searchBtn-img"></a>
+        </div>
+
+        <img src="./assets/images/img-sp.png" alt="" class="img-sp">
+    
+
+    <nav role="navigation" class="navbar">
+        <div class="navbar-items">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="main-menu-items">
+                    <li class="main-menu-item"><a href="#">Home</a></li>
+                    <li class="main-menu-item"><a href="#">Men's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                        <ul class="sub-main-menu">
+                            <li class="sub-main-menu-item-content"><a href="#">Clothing</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Wallets</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Footwear</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Watches</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Accessories</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Bags</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Caps & Hats</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Jewellery</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Parfumes</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Beauty</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Shirts</a></li>
+                            <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item"><a href="#">Women's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                        <ul class="sub-main-menu">
+                            <li class="main-menu-item-content"><a href="#">Clothing</a></li>
+                            <li class="main-menu-item-content"><a href="#">Wallets</a></li>
+                            <li class="main-menu-item-content"><a href="#">Footwear</a></li>
+                            <li class="main-menu-item-content"><a href="#">Watches</a></li>
+                            <li class="main-menu-item-content"><a href="#">Accessories</a></li>
+                            <li class="main-menu-item-content"><a href="#">Bags</a></li>
+                            <li class="main-menu-item-content"><a href="#">Caps & Hats</a></li>
+                            <li class="main-menu-item-content"><a href="#">Jewellery</a></li>
+                            <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
+                            <li class="main-menu-item-content"><a href="#">Parfumes</a></li>
+                            <li class="main-menu-item-content"><a href="#">Beauty</a></li>
+                            <li class="main-menu-item-content"><a href="#">Shirts</a></li>
+                            <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item"><a href="#">Electronics</a></li>
+                    <li class="main-menu-item"><a href="#">Short codes</a></li>
+                    <li class="main-menu-item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="shopping-cart">
+                <p class="cart-info"><span class="glyphicon glyphicon-shopping-cart"></span>$0.00 (0 items)</p>
+                <p class="cart-info">Empty Cart</p>
+            </div>
+            
+        </div>
+        <div class="navbar-logo">
+            <img src="./assets/images/ba3.jpg" alt="">
+        </div>
+    </nav>
+</header>   
+
+<main>
+    <section class="news">
+        <h1>New Arrivals</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque neque nam omnis quae suscipit labore modi commodi expedita, dignissimos quibusdam reiciendis quo culpa ducimus consectetur eius. Deserunt porro nobis quo.</p>
+    </section>
+    <article class="promotions">  
+        <section class="promotions-wedding">
+            <article class="card-wedding">
+                    <p>Wedding Collection</p>
+                    <p>Flat 50% Discount</p>
+                    <p><span>$250</span> $500</p>
+                    <button type="button">Add to card</button>
+            </article>
+        </section>
+        <section class="promotions-brands">
+            <article class="card-levis">
+                        <img src="./assets/images/levis1.png" alt="">
+                        <p>Up to 40% Off</p>
+                        <button type="button">Shop now</button>
+            </article>
+            <article class="card-digjam">
+                    <p>Up to 50% Off</p>
+                    <button type="button">Shop now</button>
+                    <img src="./assets/images/dig.jpg" alt="">
+            </article>
+        </section>
+        <section class="promotions-men">
+            <article class="card-men">
+                    <p>Spring / Summer</p>
+                    <p>Shop Men</p>
+            </article>
+        </section>
+    </article>
+
+    <section class="tabs">
+        <article class="tab-item">
+            <p><a href="#" class="tab-link">Latest Design</a></p>
+        </article>
+        <article class="tab-item">
+            <p><a href="#" class="tab-link">Special Offers</a></p>
+        </article>
+        <article class="tab-item">
+            <p><a href="#" class="tab-link">Collections</a></p>
+        </article>
+    </section>
+    <section class="articles">
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a1.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a2.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a3.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a4.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a5.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a6.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a7.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+        <article class="card">
+            <p class="label">new</p>
+            <img src="./assets/images/a8.png" alt="" class="img_card">
+            <header class="card_header">Air Tshirt Black</header>
+            <section class="price">$45.99 <span class="offer">69.71</span></section>
+            <footer><button>Add to cart</button></footer>
+        </article>
+    </section>
+
+    <section class="instructions">
+        <article class="instructions-card">
+            <h2>Buy your product in a simple way</h2>
+        </article>
+        <article class="instructions-card">
+            <p class="glyphicon glyphicon-user icon"></p>
+            <h2>Login to your account</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio, nam sapiente temporibus autem odio, cumque corrupti quisquam nulla, quod doloremque voluptatum dicta vitae vel maxime corporis odit necessitatibus expedita?</p>
+        </article>
+        <article class="instructions-card">
+            <p class="glyphicon glyphicon-ok icon"></p>
+            <h2>Login to your account</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio, nam sapiente temporibus autem odio, cumque corrupti quisquam nulla, quod doloremque voluptatum dicta vitae vel maxime corporis odit necessitatibus expedita?</p>
+        </article>
+        <article class="instructions-card">
+            <p class="glyphicon glyphicon-credit-card icon"></p>
+            <h2>Login to your account</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio, nam sapiente temporibus autem odio, cumque corrupti quisquam nulla, quod doloremque voluptatum dicta vitae vel maxime corporis odit necessitatibus expedita?</p>
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/images/logo3.jpg" alt="" class="logo-footer">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure, voluptatibus animi consequatur temporibus saepe ipsa inventore repellendus maiores dolorum reiciendis dolor sit. Debitis autem quidem laudantium, quas voluptatem cumque!</p>
+        <h2>Sign up for newsletter</h2>
+        <form class="sign-up">
+            <div class="wrapper">
+                <input type="email" id="text" placeholder="Email">
+                <button type="button">Submit</button>
+            </div>
+        </form>
+        <div class="informations">
+            <h2>Information</h2>
+            <ul class="categories">
+                <li class="categories-item"><a class="categories-link" href="#">Home</li>
+                <li class="categories-item"><a class="categories-link" href="#">Mens's Wear</a></li>
+                <li class="categories-item"><a class="categories-link" href="#">Women's Wear</a></li>
+                <li class="categories-item"><a class="categories-link" href="#">Electronics</a></li>
+                <li class="categories-item"><a class="categories-link" href="#">Short Codes</a></li>
+                <li class="categories-item"><a class="categories-link" href="#">Contact</a></li>
             </ul>
-        </nav>
-        <main class="main">
-            <h1>CSS is Cool</h1>
-            <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, sapiente! Suscipit, deleniti nulla facilis sint adipisci numquam magni, natus voluptatum cumque reiciendis voluptatibus eius eaque harum atque quam eveniet commodi.</span><span>Sunt asperiores voluptas officiis nihil consequuntur delectus voluptatem, inventore, dicta explicabo a culpa ratione perspiciatis facilis quisquam dolorum! Consequatur magnam pariatur dolore illum repellat voluptatum expedita officiis esse quis praesentium!</span></p>
-            <p><span>Magni, at eum itaque odio quibusdam cumque labore, dolor molestiae iure accusantium laborum in quas sapiente natus illo iusto! Quas reprehenderit ipsa quod inventore vero ratione a, officiis dolorum iste?</span><span>Quis delectus eligendi voluptatem eos omnis quasi pariatur possimus reprehenderit vero! Consequuntur illo cupiditate, voluptate assumenda quo, nostrum corrupti eos, alias minus quae sint libero non tempore ea delectus odit!</span></p>
-            <p><span>Laboriosam, ad temporibus. Praesentium voluptate culpa numquam magnam optio repudiandae earum voluptates officia quos excepturi ex iste nostrum iure molestias blanditiis ipsam vel facilis aut, sit molestiae dolore doloribus. Blanditiis!</span><span>Animi velit in facilis non, molestiae accusamus possimus deserunt minima iste cupiditate obcaecati reiciendis nobis eum quam repudiandae consequatur expedita commodi doloribus consequuntur dolorem odio ducimus aliquid accusantium. Sapiente, doloribus?</span></p>
-        </main>
-    </div>
+        </div>
+
+        <div class="store-informations">
+            <h2>Store Information</h2>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Address:1234k Avenue, 4th block, Newyork City,</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: info@example.com</p>
+            <p><span class="glyphicon glyphicon-earphone"></span>Phone: +1234 567 567</p>
+        </div>
+
+        <div class="flickr-posts">
+            <h2>Flicker posts</h2>
+            <div class="flicker-images">
+                <img src="./assets/images/b15.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b16.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b17.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b18.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b15.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b16.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b17.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b18.jpg" alt="" class="flicker-image">
+                <img src="./assets/images/b15.jpg" alt="" class="flicker-image">
+            </div>
+
+        </div>
+
+        <div class="copywright">
+            <p>&copy; 2016 Smart Shop. All rights reserved | Design by W3layouts</p>
+        </div>
+
+
+    </footer>
+
+</main>
 </body>
 </html>
