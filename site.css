@@ -57,21 +57,17 @@
 
 .search-menu-item-2{
     flex: 1 0 auto;
+    max-width: 500px;
 }
 
-/* .logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
+
 
 .topnav{
     display: flex;
     height: 2rem;
-    /* width: 300px; */
+
     height: 2.5rem;
-    /* margin-top: 0.5rem; */
+
 }
 
 .searchBtn{
@@ -94,96 +90,89 @@
 
 .img-sp{
     width: 167px;
-    /* margin-top: 1rem; */
+    
 }
 
-
+/* RESPONSIVE NAVBAR */
 .navbar{
-    /* position: relative;
-    top: -3rem; */
     background-color: black;
-    height: 16rem;
+    
     width: 100%;
-}
-
-.navbar-items{
-    height: 4rem;
+    padding-bottom: 1rem;
     position: relative;
+    min-height: 3rem;
 }
 
-#menuToggle{
-    display: block;
-    position: absolute;
+.navbar a{
+    color: whitesmoke;
+}
+
+.navbar-toggle{
+    position: relative;
     top: 0.7rem;
-    left: 0.9rem;
-    z-index: 1;
-
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
-    border: 1px solid white;
-    border-radius: 0.5rem;
+    left: 1rem;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
 }
 
-#menuToggle input{
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-
-    -webkit-touch-callout: none;
-}
-
-#menuToggle span{
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-.main-menu-items{
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
+.main-nav{
     list-style-type: none;
-    
-    transform-origin: 0% 0%;
-    
-    transform: translate(-100%, 0);
-    
-}
-
-.main-menu-items a{
-    text-decoration: none;
-}
-
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+    display: none;
 }
 
 .sub-main-menu{
     display: none;
 }
 
-.main-menu-item:hover .sub-main-menu{
+.active {
     display: block;
 }
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 3rem;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    .active {
+        display: block;
+    }
+}
+.nav-links{
+    text-decoration: none;
+}
+
+.main-nav .main-menu-item{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* **********END OF RESPONSIVE NAVBAR************* */
 
 .shopping-cart{
 
@@ -195,9 +184,11 @@
     background-color: orange;
     position: absolute;
 
-    height: 100%;
+    max-height: 3rem;
     width: 9rem;
     right: 1.5rem;
+    top: 0;
+    bottom: 0;;
 }
 
 .cart-info{

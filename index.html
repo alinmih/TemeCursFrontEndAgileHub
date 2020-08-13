@@ -34,20 +34,16 @@
                 </form>
                 <img src="./assets/images/img-sp.png" alt="" class="img-sp search-menu-item">
             </div>
-
-        <nav role="navigation" class="navbar">
-
-            
-            <!-- <div class="navbar-items">
-                <div id="menuToggle">
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="main-menu-items">
-                        <li class="main-menu-item"><a href="#">Home</a></li>
-                        <li class="main-menu-item"><a href="#">Men's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
-                            <ul class="sub-main-menu">
+    </header> 
+        <nav class="navbar">
+                    <a class="navbar-toggle" id="js-navbar-toggle">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                    
+                    <ul class="main-nav" id="js-menu">
+                        <li class="main-menu-item"><a href="#" class="nav-links">Home</a></li>
+                        <li class="main-menu-item"><a  class="nav-links" id="js-navbar-men-toggle">Men's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="sub-main-menu" id="js-men-submenu">
                                 <li class="sub-main-menu-item-content"><a href="#">Clothing</a></li>
                                 <li class="sub-main-menu-item-content"><a href="#">Wallets</a></li>
                                 <li class="sub-main-menu-item-content"><a href="#">Footwear</a></li>
@@ -63,8 +59,8 @@
                                 <li class="sub-main-menu-item-content"><a href="#">Sunglasses</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu-item"><a href="#">Women's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
-                            <ul class="sub-main-menu">
+                        <li class="main-menu-item"><a class="nav-links" id="js-navbar-women-toggle">Women's wear<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="sub-main-menu" id="js-women-submenu">
                                 <li class="main-menu-item-content"><a href="#">Clothing</a></li>
                                 <li class="main-menu-item-content"><a href="#">Wallets</a></li>
                                 <li class="main-menu-item-content"><a href="#">Footwear</a></li>
@@ -80,23 +76,20 @@
                                 <li class="main-menu-item-content"><a href="#">Sunglasses</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu-item"><a href="#">Electronics</a></li>
-                        <li class="main-menu-item"><a href="#">Short codes</a></li>
-                        <li class="main-menu-item"><a href="#">Contact</a></li>
+                        <li class="main-menu-item"><a href="#" class="nav-links">Electronics</a></li>
+                        <li class="main-menu-item"><a href="#" class="nav-links">Short codes</a></li>
+                        <li class="main-menu-item"><a href="#" class="nav-links">Contact</a></li>
                     </ul>
-                </div>
+                
                 <div class="shopping-cart">
                     <p class="cart-info"><span class="glyphicon glyphicon-shopping-cart"></span>$0.00 (0 items)</p>
                     <p class="cart-info">Empty Cart</p>
-                </div>
-                
-            </div> -->
-            <div class="navbar-logo">
-                <img src="./assets/images/ba3.jpg" alt="">
-            </div>
+                </div>  
         </nav>
-    </header>   
 
+    <div class="navbar-logo">
+        <img src="./assets/images/ba3.jpg" alt="">
+    </div>
 <main>
     <section class="news">
         <h1>New Arrivals</h1>
@@ -281,14 +274,27 @@
 
 
     <script>
-        function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-        }
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            
+            mainNav.classList.toggle('active');
+        });
+
+        let menSubMenu = document.getElementById('js-men-submenu');
+        let menSubMenuToggle = document.getElementById('js-navbar-men-toggle');
+        menSubMenuToggle.addEventListener('click', function(){
+            menSubMenu.classList.toggle('active');
+        });
+
+        let womenSubMenu = document.getElementById('js-women-submenu');
+        let womenSubMenuToggle = document.getElementById('js-navbar-women-toggle');
+        womenSubMenuToggle.addEventListener('click', function(){
+            womenSubMenu.classList.toggle('active');
+        });
+
+        
     </script>
 </body>
 </html>
