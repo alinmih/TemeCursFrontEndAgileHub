@@ -2,6 +2,7 @@ import React from "react";
 import MoviesList from "../features/MoviesList";
 import MovieDetails from "../features/MovieDetails";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
