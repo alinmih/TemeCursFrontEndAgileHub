@@ -12,8 +12,6 @@ export default function MoviesList() {
     return <h1>Loading...</h1>;
   }
 
-  console.log(endPoint);
-
   function handlePrev() {
     const prevLink = movies.pagination.links.prev;
     if (prevLink == null) {
@@ -21,7 +19,6 @@ export default function MoviesList() {
     } else {
       setEndPoint("movies?" + prevLink.split("?").pop());
     }
-    //const [movies] = useApi("movies");
   }
 
   function handleNext() {
